@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:padding="6dp" >
+
+        <ImageView
+            android:id="@+id/plan_item_image"
+            android:background="@drawable/icon_channel"
+            style="@style/image_view_style" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:shrinkColumns="1"
+        android:stretchColumns="1" >
+
+        <TableRow style="@style/table_row_style_channel" >
+
+            <TextView
+                android:id="@+id/channel_name"
+                style="@style/list_view_key"
+                android:text="渠道名称:" />
+
+            <TextView
+                android:id="@+id/channel_item_name"
+                style="@style/list_view_item_first" />
+        </TableRow>
+
+<!--         <TableRow style="@style/table_row_style" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/channel_id" -->
+<!--                 style="@style/list_view_key" -->
+<!--                 android:text="渠 道 ID:" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/channel_item_id" -->
+<!--                 style="@style/list_view_item_content" /> -->
+<!--         </TableRow> -->
+
+        <TableRow style="@style/table_row_style_channel" >
+
+            <TextView
+                android:id="@+id/channel_kindname"
+                style="@style/list_view_key"
+                android:text="渠道类型:" />
+
+            <TextView
+                android:id="@+id/channel_item_kindname"
+                style="@style/list_view_item_content" />
+        </TableRow>
+
+<!--         <TableRow style="@style/table_row_style" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/channel_marttype" -->
+<!--                 style="@style/list_view_key" -->
+<!--                 android:text="市场类型:" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/channel_item_marttype" -->
+<!--                 style="@style/list_view_item_content" /> -->
+<!--         </TableRow> -->
+
+<!--         <TableRow style="@style/table_row_style" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/channel_areatype" -->
+<!--                 style="@style/list_view_key" -->
+<!--                 android:text="地域类型:" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/channel_item_areatype" -->
+<!--                 style="@style/list_view_item_content" /> -->
+<!--         </TableRow> -->
+
+        <TableRow style="@style/table_row_style_channel" >
+
+            <TextView
+                android:id="@+id/channel_picnum"
+                style="@style/list_view_key"
+                android:text="照片数量:" />
+
+            <TextView
+                android:id="@+id/channel_item_picnum"
+                style="@style/list_view_item_content" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

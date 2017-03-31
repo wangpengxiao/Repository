@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:theme="@android:style/Theme.NoTitleBar">
+  
+	<ImageView android:id="@+id/img" 
+    android:src="@drawable/tab_selector1"
+    android:scaleType="centerInside"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"/>    
+
+  	
+</LinearLayout>

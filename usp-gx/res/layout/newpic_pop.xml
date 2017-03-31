@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="166dp"  
+    android:layout_height="45dp"  
+    android:background="@drawable/pop_bg"  
+    android:padding="0dp"
+    android:orientation="horizontal">  
+  
+  
+    <Button
+        android:id="@+id/button_add_from_camera"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="0dp"
+        android:padding="0dp"
+        android:layout_centerInParent="true"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="拍照"               
+        android:textColor="@color/black"
+        android:textSize="11dp" /> 
+        
+    <Button
+        android:id="@+id/button_add_from_photo"
+        android:layout_margin="6dp"
+        android:layout_centerInParent="true"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
+        android:padding="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="相册"               
+        android:textColor="@color/black"
+        android:textSize="11dp" />     
+  
+</LinearLayout>  
+

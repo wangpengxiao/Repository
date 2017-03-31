@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/content_bg">
+
+	<include layout="@layout/app_head_edit"/>
+   
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"> 	
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">     
+	<RelativeLayout style="@style/app_layout_top_style" >
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="活动名称"/>
+	    <EditText
+	        android:id="@+id/plan_record_name"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空"/>
+<!-- 		<ImageView  -->
+<!-- 		    	android:id="@+id/edit_image01" -->
+<!-- 				style="@style/app_editimage_style" -->
+<!-- 				android:visibility="invisible"/>	     -->
+	</RelativeLayout>
+ 
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="活动地址" />
+	    <EditText
+	        android:id="@+id/plan_record_address"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />
+<!-- 		<ImageView  -->
+<!-- 		    	android:id="@+id/edit_image02" -->
+<!-- 				style="@style/app_editimage_style" -->
+<!-- 				android:visibility="invisible"/>		     -->
+	</RelativeLayout>	
+	
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="竞争者信息" />
+	    <EditText
+	        android:id="@+id/plan_record_competitor_info"
+	       	android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	      	android:layout_centerVertical="true"
+	       	android:layout_alignParentRight="true"
+	    	android:layout_marginRight="15dp"
+	      	android:textSize="14dp"
+	        android:text="空"
+	        android:visibility="gone"
+	        android:editable="true"
+	        android:focusable="true"
+	       />
+	      <EditText
+	        style="@style/app_edittext_style"
+	        android:id="@+id/plan_test_view_competitor_info"
+	        android:enabled="false"
+	        android:text="空" />
+		<ImageView 
+		    	android:id="@+id/edit_image03"
+				style="@style/app_editimage_style"
+				android:visibility="invisible"/>		      
+	      	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="计划编号" />
+	    <EditText
+	        android:id="@+id/plan_record_plan_id"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />    
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="执行人工号" />
+	    <EditText
+	        android:id="@+id/plan_record_participant"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />    
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="城市类型" />
+	    <EditText
+	        android:id="@+id/plan_record_cpn_area_type"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />    
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="场所名称" />
+	    <EditText
+	        android:id="@+id/plan_record_cpn_area_name"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />		    
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="记录编号" />
+	    <EditText
+	        android:id="@+id/plan_record_recode_id"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />   
+	</RelativeLayout>	
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="执行人部门" />
+	    <EditText
+	        android:id="@+id/plan_record_participant_dept"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />   
+	</RelativeLayout>	
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/pic_select"
+	    android:layout_width="wrap_content"
+	    android:layout_height="37dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/list_item_middle_bg">
+	    
+		<RelativeLayout 
+	    	android:id="@+id/pic_layout01"
+        	android:layout_width="fill_parent"
+        	android:layout_height="37dp">
+	    	<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:textSize="14dp"
+	      	  	android:text="图片" />
+	   		 <TextView
+	   		   	android:id="@+id/pic_number"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="25dp"
+				android:textSize="14dp"
+	   		   	android:text="0" />	    
+			<ImageView 
+				android:layout_width="8dp"
+				android:layout_height="13dp"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="6dp"
+				android:background="@drawable/arrow_more"/>    
+
+		</RelativeLayout>	
+		  
+		<RelativeLayout
+		    	android:id="@+id/pic_layout02"
+		   		android:layout_width="fill_parent"
+		    	android:layout_height="52dp"
+		    	android:layout_below="@id/pic_layout01"
+		    	android:layout_marginTop="-5dp"
+				android:visibility="invisible"
+		    	android:background="@drawable/item_expand_bg" >
+	    </RelativeLayout>	    
+	</RelativeLayout>	
+	<RelativeLayout style="@style/app_layout_bottom_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="状态" />
+	    <EditText
+	        android:id="@+id/plan_record_state"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="状态" />
+	</RelativeLayout>
+<!-- 	 <Button -->
+<!-- 	    android:id="@+id/update_pic_button" -->
+<!-- 	    android:layout_width="wrap_content" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	   	android:text="上传图片"  -->
+<!-- 	   	android:textSize="16px" -->
+<!-- 	    /> -->
+
+	 <ImageView 
+	     android:id="@+id/image_view_marketing"
+	     android:layout_width="204dp"
+ 		 android:layout_height="100dp"
+ 		/>
+	
+	</LinearLayout>
+ </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/usp_shape_bg" >
+
+    <include layout="@layout/app_head_blank" />
+
+    <include layout="@layout/common_footer" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relativelayout_bottom"
+        android:layout_below="@id/app_head_blank"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.tydic.android.usp.ui.HorizontalListView
+            android:id="@+id/main_item_list"
+            android:layout_width="654dp"
+            android:layout_height="180dp"
+            android:layout_margin="50dp"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

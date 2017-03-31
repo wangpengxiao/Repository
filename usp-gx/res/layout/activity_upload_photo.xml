@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/content_bg">
+
+	<include layout="@layout/app_head_blank"/>
+   
+	
+	<RelativeLayout
+	    android:id="@+id/photo_layout"
+	   	android:layout_width="fill_parent"
+	    android:layout_height="52dp"
+       	android:layout_weight="1"		    	
+	    android:background="@color/black" >
+	    
+	<Gallery xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/photo_gallery"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>	    
+	    
+    </RelativeLayout>
+	    	
+	<RelativeLayout
+	   	android:layout_width="fill_parent"
+	    android:layout_height="52dp"
+       	android:layout_weight="1"		    	
+	    android:background="@drawable/content_bg" >
+		    	
+		<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"> 	
+
+		<RelativeLayout
+	   		android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+
+			<TextView
+        		android:id="@+id/photo_num"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+       		 	android:gravity="center_horizontal"
+        		android:padding="2dp"
+        		android:background="#80000000" 
+        		android:textColor="@color/white"  
+        		android:textSize="9dp"     
+        		android:text="1/2" />			    
+		    
+			<RelativeLayout style="@style/app_layout_style"
+	    		android:layout_marginTop="25dp" >
+	    		<TextView
+	        		style="@style/app_textview_left_style"
+	        		android:text="图片描述"/>
+	    		<EditText
+	        		style="@style/app_edittext_style"
+	        		android:id="@+id/photo_desc"
+	        		android:hint="请输入图片描述"/>
+			</RelativeLayout>  		    
+		    	    
+	    </RelativeLayout>	
+      
+
+		</ScrollView>		    
+		    
+		    
+    </RelativeLayout>		
+		
+
+
+</LinearLayout>

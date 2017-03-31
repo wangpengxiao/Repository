@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_head_1btn" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 渠道业务量、佣金账期信息 -->
+
+            <RelativeLayout style="@style/app_layout_top_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="渠道ID" />
+
+                <TextView
+                    android:id="@+id/channel_id"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="渠道名称" />
+
+                <TextView
+                    android:id="@+id/channel_name"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="账期" />
+
+                <TextView
+                    android:id="@+id/bus_period"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <!-- 2G开始 -->
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="2G新增用户" />
+
+                <TextView
+                    android:id="@+id/g2_addusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="2G活跃用户" />
+
+                <TextView
+                    android:id="@+id/g2_activityusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="2G欠费停机用户" />
+
+                <TextView
+                    android:id="@+id/g2_overdueusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="2G流失用户" />
+
+                <TextView
+                    android:id="@+id/g2_lossusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="2G收入" />
+
+                <TextView
+                    android:id="@+id/g2_income"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="2G欠费" />
+
+                <TextView
+                    android:id="@+id/g2_arrears"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+            <!-- 2G结束，3G开始 -->
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="3G新增用户" />
+
+                <TextView
+                    android:id="@+id/g3_addusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="3G活跃用户" />
+
+                <TextView
+                    android:id="@+id/g3_activityusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="3G欠费停机用户" />
+
+                <TextView
+                    android:id="@+id/g3_overdueusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="3G流失用户" />
+
+                <TextView
+                    android:id="@+id/g3_lossusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="3G收入" />
+
+                <TextView
+                    android:id="@+id/g3_income"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="3G欠费" />
+
+                <TextView
+                    android:id="@+id/g3_arrears"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+            <!-- 3G结束，固话开始 -->
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="固话新增用户" />
+
+                <TextView
+                    android:id="@+id/fix_addusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="固话活跃用户" />
+
+                <TextView
+                    android:id="@+id/fix_activityusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="固话欠费停机用户" />
+
+                <TextView
+                    android:id="@+id/fix_overdueusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="固话流失用户" />
+
+                <TextView
+                    android:id="@+id/fix_lossusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="固话收入" />
+
+                <TextView
+                    android:id="@+id/fix_income"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="固话欠费" />
+
+                <TextView
+                    android:id="@+id/fix_arrears"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+            <!-- 固话结束 ,宽带开始 -->
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="宽带新增用户" />
+
+                <TextView
+                    android:id="@+id/broadband_addusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="宽带活跃用户" />
+
+                <TextView
+                    android:id="@+id/broadband_activityusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="宽带欠费停机用户" />
+
+                <TextView
+                    android:id="@+id/broadband_overdueusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="宽带流失用户" />
+
+                <TextView
+                    android:id="@+id/broadband_lossusernum"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="宽带收入" />
+
+                <TextView
+                    android:id="@+id/broadband_income"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="宽带欠费" />
+
+                <TextView
+                    android:id="@+id/broadband_arrears"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+            <!-- 宽带结束 ,佣金开始 -->
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="一次佣金" />
+
+                <TextView
+                    android:id="@+id/commission_one"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="分次佣金" />
+
+                <TextView
+                    android:id="@+id/commission_more"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_bottom_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="话费分成" />
+
+                <TextView
+                    android:id="@+id/commission_callsInto"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

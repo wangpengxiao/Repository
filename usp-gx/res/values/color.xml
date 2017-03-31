@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="darkgray">#808080</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="black">#000000</drawable>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="font_grey">#2d2d2d</color>
+    <color name="font_6d">#6d6d6d</color>
+    <color name="font_blue">#244fbb</color>
+    <color name="navigation_left_bg">#f6f5f5</color>
+    <color name="navigation_left_pressed_bg">#f6f5f5</color>
+    <color name="navigation_left_text_black">#484848</color>
+    <color name="navigation_left_text_grey">#9d9e9e</color>
+    <color name="navigation_left_text_red">#dc4002</color>
+    <color name="navigation_font_title">#949393</color>
+    <color name="navigation_font_content">#a6a6a6</color>
+    <color name="navigation_bg">#343434</color>
+    <color name="navigation_quick_bg">#1f1f1f</color>
+    <color name="navigation_drawer_item_bg_normal">#434547</color>
+    <color name="navigation_drawer_item_bg_pressed">#2f3032</color>
+    <color name="navigation_drawer_item_text_normal">#ffa6a6a6</color>
+    <color name="navigation_drawer_item_text_pressed">#ff4e4e4e</color>
+    <color name="usp_header_bg_color">#dc0221</color>
+
+    <drawable name="RED">#980323</drawable>
+    <drawable name="grey">#636563</drawable>
+    <drawable name="orange">#FFF3B1</drawable>
+    <drawable name="bggrag">#eaeaea</drawable>
+    <drawable name="color_d6">#d6d6d6</drawable>
+    <drawable name="color_d0">#d0d0d0</drawable>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <RelativeLayout 
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+       	android:padding="6dp"
+        >
+        <ImageView
+            android:id="@+id/plan_item_record_image"
+           	style="@style/image_view_style"
+            />
+    </RelativeLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+ 	android:shrinkColumns="1"
+  	android:stretchColumns="1" 
+    android:orientation="vertical" >
+	<TableRow 
+	   style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_name"
+        style="@style/list_view_key" />
+    <TextView
+        android:id="@+id/record_item_name"
+      	style="@style/list_view_item_first"	 />
+</TableRow>
+<TableRow 
+	  style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_person"
+        style="@style/list_view_key"/>
+    <TextView
+        android:id="@+id/record_item_participant"
+        style="@style/list_view_item_content"/>
+</TableRow>
+<TableRow 
+	  style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_person_dept"
+        style="@style/list_view_key"/>
+    <TextView
+        android:id="@+id/record_item_participant_dept"
+        style="@style/list_view_item_content"/>
+</TableRow>
+<TableRow 
+	    style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_competitor_info"
+        style="@style/list_view_key" />
+    <TextView
+        android:id="@+id/record_item_info"
+       	style="@style/list_view_item_content"/>"
+</TableRow>
+<TableRow 
+	  style="@style/table_row_style"
+    >
+     <TextView 
+		android:id="@+id/record_item_record_address"
+       	style="@style/list_view_key" />
+    <TextView
+        android:id="@+id/record_item_address"
+       	style="@style/list_view_item_content" />
+</TableRow>
+<TableRow 
+	  style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_city_type"
+        style="@style/list_view_key"/>
+    <TextView
+        android:id="@+id/record_item_city_type"
+        style="@style/list_view_item_content"/>
+</TableRow>
+<TableRow 
+	  style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_city"
+        style="@style/list_view_key"/>
+    <TextView
+        android:id="@+id/record_item_city"
+        style="@style/list_view_item_content"/>
+</TableRow>
+<TableRow 
+	  style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_pic_num"
+        style="@style/list_view_key"/>
+    <TextView
+        android:id="@+id/record_item_num"
+        style="@style/list_view_item_content"/>
+</TableRow>
+<TableRow 
+	  style="@style/table_row_style"
+    >
+     <TextView
+		android:id="@+id/record_item_record_plan_flag"
+        style="@style/list_view_key"/>
+    <TextView
+        android:id="@+id/record_item_flag"
+        style="@style/list_view_item_content"/>
+</TableRow>
+</TableLayout>
+</LinearLayout>

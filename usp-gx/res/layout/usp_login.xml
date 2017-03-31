@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/usp_shape_bg" >
+
+    <include layout="@layout/common_footer" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/relativelayout_bottom"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/usp_logo_login"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/usp_login_bg" >
+
+            <LinearLayout
+                android:id="@+id/linear_layout_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/usp_username_bg"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/user_code"
+                    android:layout_width="140dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@null"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_user"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/usp_password_bg"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/user_pwd"
+                    android:layout_width="140dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@null"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_pass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identifying_code"
+                    android:textColor="@color/font_6d"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/identifying_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/usp_login_code"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/code_img"
+                    android:layout_width="60dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/usp_login_img"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/another_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/another_code"
+                    android:textColor="@color/font_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_keep"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/remember_pwd"
+                    style="@style/usp_checkbox_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/rememberpwd_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_cutline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_keep"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="270dp"
+                    android:layout_height="1px"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_d0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_loginbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_cutline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/usp_loginbtn_selector" >
+                </Button>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

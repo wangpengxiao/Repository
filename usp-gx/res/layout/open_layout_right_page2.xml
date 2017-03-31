@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tydic.android.usp"
+    android:id="@+id/open_layout_right_page2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/open_layout_right_page2_footer"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
+
+        <!-- 标签页02 过滤选项 -->
+
+        <LinearLayout
+            android:id="@+id/open_layout_right_page2_select_condition"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingRight="15dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingRight="15dp" >
+
+                        <!-- 标签页02 过滤选项 套餐类型 -->
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page2_item1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="25dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page2_package_type"
+                                android:layout_width="115dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <Button
+                                    android:id="@+id/open_layout_right_page2_package_type_title"
+                                    android:layout_width="100dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="套餐类型"
+                                    android:textColor="@drawable/text_btn_selector"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@id/open_layout_right_page2_package_type_title"
+                                    android:src="@drawable/arrow_more" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page2_package_type_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@id/open_layout_right_page2_package_type"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="不限"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <!-- 标签页02 过滤选项 套餐类型 -->
+                        <!--
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page2_item2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/open_layout_right_page2_item1"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/"
+                                android:layout_width="115dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <Button
+                                    android:id="@+id/open_layout_right_page2_package_type_title"
+                                    android:layout_width="100dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="套餐类型"
+                                    android:textColor="@drawable/text_btn_selector"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@id/open_layout_right_page2_package_type_title"
+                                    android:src="@drawable/arrow_more" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page2_package_type_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@id/open_layout_right_page2_package_type"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="不限"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                        -->
+
+
+                        <!-- 标签页02 过滤选项 月消费金额 -->
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page2_item2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/open_layout_right_page2_item1"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page2_month_consumption"
+                                android:layout_width="115dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <Button
+                                    android:id="@+id/open_layout_right_page2_month_consumption_title"
+                                    android:layout_width="100dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="月消费金额"
+                                    android:textColor="@drawable/text_btn_selector"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@id/open_layout_right_page2_month_consumption_title"
+                                    android:src="@drawable/arrow_more" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page2_month_consumption_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@id/open_layout_right_page2_month_consumption"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="不限"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp" >
+
+                        <!-- 标签页02 过滤选项 月通话时长 -->
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page2_item3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/open_layout_right_page2_item2"
+                            android:layout_marginTop="25dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page2_month_call"
+                                android:layout_width="115dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <Button
+                                    android:id="@+id/open_layout_right_page2_month_call_title"
+                                    android:layout_width="100dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="月通话时长"
+                                    android:textColor="@drawable/text_btn_selector"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@id/open_layout_right_page2_month_call_title"
+                                    android:src="@drawable/arrow_more" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page2_month_call_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@id/open_layout_right_page2_month_call"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="不限"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <!-- 标签页02 过滤选项 月上网流量 -->
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page2_item4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/open_layout_right_page2_item3"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page2_month_net"
+                                android:layout_width="115dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <Button
+                                    android:id="@+id/open_layout_right_page2_month_net_title"
+                                    android:layout_width="100dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="月上网流量"
+                                    android:textColor="@drawable/text_btn_selector"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@id/open_layout_right_page2_month_net_title"
+                                    android:src="@drawable/arrow_more" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page2_month_net_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@id/open_layout_right_page2_month_net"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="不限"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <!-- 标签页02 过滤选项 其他新增 -->
+                        <!--
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page2_item5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/open_layout_right_page2_item4"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+                        </RelativeLayout>
+                        -->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/open_layout_right_page2_item6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:paddingTop="3dp" >
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/line_gradient_h" />
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page2_searching_layout"
+                            android:layout_width="90dp"
+                            android:layout_height="fill_parent" >
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/line_gradient_v" />
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page2_searching_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:background="@android:color/transparent"
+                                android:drawablePadding="3dp"
+                                android:gravity="center_vertical"
+                                android:text="套餐名称"
+                                android:textColor="@drawable/black"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/open_layout_right_page2_search_ofr_name"
+                            android:layout_width="185dp"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="0dp"
+                            android:layout_toRightOf="@id/open_layout_right_page2_searching_layout"
+                            android:background="@android:color/transparent"
+                            android:hint="请输入套餐名称"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@android:color/tertiary_text_light"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/open_layout_right_page2_search_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/button_query_selector"
+                        android:text="查询"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/usp_block_bg"
+                android:orientation="vertical"
+                android:paddingLeft="15dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="3dp" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/line_gradient_h" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="已选套餐"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/open_layout_right_page2_selected_package"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:paddingLeft="15dp"
+                    android:shadowColor="#55000000"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="3"
+                    android:text="未选择套餐"
+                    android:textColor="@color/red"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/open_select_package_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/open_layout_right_page2_select_condition"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <!-- 标签页02 footer -->
+
+    <LinearLayout
+        android:id="@+id/open_layout_right_page2_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/open_layout_right_page2_pre_step"
+                style="@style/usp_btn_common_left_style"
+                android:text="@string/button_prev" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/open_layout_right_page2_next_step"
+                style="@style/usp_btn_common_right_style"
+                android:text="@string/button_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

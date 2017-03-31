@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ModifyPassword" 
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/modify_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#FE7C00"
+            android:text="@string/cancel_text"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/modify_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#FE7C00"
+            android:text="@string/OK_text"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/modify_title_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" 
+         android:layout_marginTop="15dp" >
+
+        <ImageView
+            android:id="@+id/image_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/modifypassword"
+           />
+
+        <TextView
+            android:id="@+id/modify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_lock"
+            android:text="@string/modify_pwd"    
+            android:textColor="#FE7C00"
+            android:textSize="10pt" />
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modify_title_pass"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20pt"
+                android:text="@string/old_pass"
+                android:textColor="#FE7C00" />
+
+            <EditText
+                android:id="@+id/old_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20pt"
+                android:text="@string/new_pass"
+                android:textColor="#FE7C00" />
+
+            <EditText
+                android:id="@+id/new_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20pt"
+                android:text="@string/repeat_pass"
+                android:textColor="#FE7C00" />
+
+            <EditText
+                android:id="@+id/repeat_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

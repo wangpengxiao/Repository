@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp" >
+
+    <ImageButton
+        android:id="@+id/common_btn_notify"
+        style="@style/actionbar_common_image_button_style"
+        android:contentDescription="@string/bar_messages"
+        android:src="@drawable/usp_bar_messages_icon_48" />
+
+</RelativeLayout>

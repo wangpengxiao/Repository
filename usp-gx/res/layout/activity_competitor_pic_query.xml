@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   	android:background="@drawable/content_bg">
+
+	<include layout="@layout/app_head_1btn"/>
+    
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"> 	
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">     
+     
+	<RelativeLayout style="@style/app_layout_top_style" >
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="竞争者Id"/>
+	    <TextView
+	        android:id="@+id/competitor_record_pic_time"
+	        style="@style/app_textview_right_style"
+	        android:text="空"/>
+	</RelativeLayout>
+ 
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="图片描述" />
+	    <TextView
+	        android:id="@+id/competitor_record_pic_comments"
+	        style="@style/app_textview_right_style"
+	        android:text="空" />
+	</RelativeLayout>	
+
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/competitor_pic_select"
+	    android:layout_width="wrap_content"
+	    android:layout_height="37dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/list_item_middle_bg" >
+	    
+		<RelativeLayout 
+	    	android:id="@+id/competitor_pic_layout01"
+        	android:layout_width="fill_parent"
+        	android:layout_height="37dp">
+	    	<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:textSize="14dp"
+	      	  	android:text="图片" />
+	   		 <TextView
+	   		   	android:id="@+id/competitor_pic_number"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="15dp"
+				android:textSize="14dp"
+	   		   	android:text="0" />	    
+			<ImageView
+				android:layout_width="8dp"
+				android:layout_height="13dp"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/arrow_more"
+				android:visibility="visible"
+				android:id="@+id/upload_image_view"
+				/>
+		</RelativeLayout>	
+		  
+		<RelativeLayout
+		    	android:id="@+id/competitor_pic_layout02"
+		   		android:layout_width="fill_parent"
+		    	android:layout_height="52dp"
+		    	android:layout_below="@id/competitor_pic_layout01"
+		    	android:layout_marginTop="-5dp"
+				android:visibility="invisible"
+		    	android:background="@drawable/item_expand_bg" >
+	    </RelativeLayout>	    
+	</RelativeLayout>	
+	
+	<RelativeLayout style="@style/app_layout_bottom_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="运营商" />
+	    <TextView
+	        android:id="@+id/competitor_record_operator"
+	        style="@style/app_textview_right_style"
+	        android:text="空" />
+	</RelativeLayout>
+<!-- 	<Button -->
+<!-- 	    android:id="@+id/update_pic_button_competitor" -->
+<!-- 	    android:layout_width="wrap_content" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	   	android:text="上传图片"  -->
+<!-- 	   	android:textSize="16px" -->
+<!-- 	    /> -->
+	 <ImageView 
+	     android:id="@+id/image_view_competitor"
+	     android:layout_width="204dp"
+ 		 android:layout_height="100dp"
+ 		/>
+	</LinearLayout>
+ </ScrollView>
+
+</LinearLayout>

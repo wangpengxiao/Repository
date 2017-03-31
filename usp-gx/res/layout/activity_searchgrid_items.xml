@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <RelativeLayout 
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+       	android:padding="0px"
+        >
+        <ImageView
+            android:id="@+id/icon_competitor_edit_image_view"
+           	style="@style/image_view_style_grid"
+            />
+    </RelativeLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+ 	android:shrinkColumns="1"
+  	android:stretchColumns="1" 
+    android:orientation="vertical" >
+	<TableRow 
+	   style="@style/table_row_style_grid"
+    >
+     <TextView
+		android:id="@+id/search_grid_item_id"
+        style="@style/list_view_key" />
+    <TextView
+       	android:id="@+id/grid_item_id"
+      	style="@style/list_view_item_first"	 />
+</TableRow>
+<TableRow 
+	    style="@style/table_row_style_grid"
+    >
+     <TextView
+		android:id="@+id/search_grid_item_info"
+        style="@style/list_view_key" />
+    <TextView
+      	android:id="@+id/grid_item_info"
+       	style="@style/list_view_item_content"/>
+</TableRow>
+</TableLayout>
+</LinearLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/title_bar_bg2"
+    android:orientation="vertical" >
+
+
+
+    <TextView
+        android:id="@+id/head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1" 
+        android:text="USP"               
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    
+    <Button
+        android:id="@+id/button_dropdown"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/head_title"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/button_dropdown" />    
+      <Button 
+          android:id="@+id/button_exit"
+          android:layout_width="35dp"
+          android:layout_height="35dp"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="5dp"
+          android:background="@drawable/exit_button"
+          />
+    
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_box"
+    android:layout_width="fill_parent"
+    android:layout_height="93dp"
+    android:orientation="vertical"
+    android:background="@drawable/dragdown_bg"
+    android:visibility="gone"
+    >
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">     
+     
+	<RelativeLayout style="@style/app_layout_style"
+	    android:layout_marginTop="5dp" >
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="搜索"/>
+	    <EditText
+	        style="@style/app_edittext_style"
+	        android:id="@+id/searchKey"
+	        android:hint="请输入关键字"/>
+	</RelativeLayout>
+
+	<RelativeLayout 
+	    style="@style/app_layout_middle_style"
+	    android:layout_marginTop="10dp"
+	    android:background="@android:color/transparent">
+	    
+   <Button
+        android:id="@+id/button_search_confirm"
+        android:layout_width="76dp"
+        android:layout_height="33dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_search_selector"
+		android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1" 
+        android:text="搜索"               
+        android:textColor="@color/white"
+        android:textSize="13dp"/>		    
+	    
+	</RelativeLayout>		
+	
+	</LinearLayout>
+</LinearLayout>

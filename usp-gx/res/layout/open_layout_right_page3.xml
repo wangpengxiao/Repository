@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/open_layout_right_page3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/open_layout_right_page3_footer"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <RelativeLayout
+                    android:id="@+id/open_layout_right_page3_item1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="3dp" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/line_gradient_h" />
+
+                    <RelativeLayout
+                        android:id="@+id/open_layout_right_page3_action_choice"
+                        android:layout_width="175dp"
+                        android:layout_height="fill_parent" >
+
+                        <Button
+                            android:id="@+id/open_layout_right_page3_action_choice_title"
+                            android:layout_width="200dp"
+                            android:layout_height="fill_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:text="是否参加合约计划"
+                            android:textColor="@drawable/text_btn_selector"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/open_layout_right_page3_action_choice_value"
+                        android:layout_width="500dp"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/open_layout_right_page3_action_choice"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/open_layout_right_page3_action_choice_on_off"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/open_layout_right_page3_action_choice_value"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/phone_action_on_off" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 参加合约计划的总界面 -->
+
+            <ScrollView
+                android:id="@+id/open_layout_right_page3_phone_plan"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="invisible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:text="活动选择"
+                            android:textColor="@color/font_grey"
+                            android:textSize="18sp"
+                            android:textStyle="italic" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/line_gradient_h" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="15dp" >
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page3_item2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:paddingTop="3dp" >
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@drawable/line_gradient_h" />
+
+                                <RelativeLayout
+                                    android:id="@+id/open_layout_right_page3_actioin_type"
+                                    android:layout_width="125dp"
+                                    android:layout_height="fill_parent" >
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_alignParentRight="true"
+                                        android:background="@drawable/line_gradient_v" />
+
+                                    <Button
+                                        android:id="@+id/open_layout_right_page3_action_type_title"
+                                        android:layout_width="100dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="center_vertical"
+                                        android:text="活动类型"
+                                        android:textColor="@drawable/text_btn_selector"
+                                        android:textSize="16sp" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/open_layout_right_page3_action_type_title"
+                                        android:src="@drawable/arrow_more" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_action_type_value"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_toRightOf="@+id/open_layout_right_page3_action_type"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="15dp"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="15dp" >
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page3_item3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:paddingTop="3dp" >
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@drawable/line_gradient_h" />
+
+                                <RelativeLayout
+                                    android:id="@+id/open_layout_right_page3_danbao_type"
+                                    android:layout_width="125dp"
+                                    android:layout_height="fill_parent" >
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_alignParentRight="true"
+                                        android:background="@drawable/line_gradient_v" />
+
+                                    <Button
+                                        android:id="@+id/open_layout_right_page3_danbao_type_title"
+                                        android:layout_width="100dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="center_vertical"
+                                        android:text="担保类型"
+                                        android:textColor="@drawable/text_btn_selector"
+                                        android:textSize="16sp" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/open_layout_right_page3_danbao_type_title"
+                                        android:src="@drawable/arrow_more" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_danbao_type_value"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_toRightOf="@+id/open_layout_right_page3_danbao_type"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="15dp"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingRight="15dp" >
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page3_item4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:paddingTop="3dp" >
+
+                                <View
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@drawable/line_gradient_h" />
+
+                                <RelativeLayout
+                                    android:id="@+id/open_layout_right_page3_action_select"
+                                    android:layout_width="125dp"
+                                    android:layout_height="fill_parent" >
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_alignParentRight="true"
+                                        android:background="@drawable/line_gradient_v" />
+
+                                    <Button
+                                        android:id="@+id/open_layout_right_page3_action_select_title"
+                                        android:layout_width="100dp"
+                                        android:layout_height="fill_parent"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="center_vertical"
+                                        android:text="可选活动"
+                                        android:textColor="@drawable/text_btn_selector"
+                                        android:textSize="16sp" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/open_layout_right_page3_action_select_title"
+                                        android:src="@drawable/arrow_more" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_action_select_value"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_toRightOf="@+id/open_layout_right_page3_action_select"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="15dp"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:text="终端信息"
+                            android:textColor="@color/font_grey"
+                            android:textSize="18sp"
+                            android:textStyle="italic" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/line_gradient_h" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page3_esn"
+                                android:layout_width="90dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_esn_title"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="终端串号"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <EditText
+                                android:id="@+id/open_layout_right_page3_esn_value"
+                                android:layout_width="185dp"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="0dp"
+                                android:layout_toRightOf="@+id/open_layout_right_page3_esn"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:paddingLeft="15dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/tertiary_text_light"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/open_layout_right_page3_esn_validate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="0dp"
+                                android:layout_toRightOf="@+id/open_layout_right_page3_esn_value"
+                                android:text="校验"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page3_phone_prod"
+                                android:layout_width="90dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="终端品牌"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page3_phone_prod_value"
+                                android:layout_width="185dp"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@+id/open_layout_right_page3_phone_prod"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="apple"
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/tertiary_text_light"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item5"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page3_phone_type"
+                                android:layout_width="90dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="终端型号"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page3_phone_type_value"
+                                android:layout_width="185dp"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@+id/open_layout_right_page3_phone_type"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="iphone6"
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/tertiary_text_light"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item6"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:id="@+id/open_layout_right_page3_phone_price"
+                                android:layout_width="90dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="终端价格"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/open_layout_right_page3_phone_price_value"
+                                android:layout_width="185dp"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@+id/open_layout_right_page3_phone_price"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="5299"
+                                android:textColor="@color/black"
+                                android:textColorHint="@android:color/tertiary_text_light"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item7"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <Button
+                                android:id="@+id/open_layout_right_page3_phone_validate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="0dp"
+                                android:text="确定选择"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp" >
+
+                        <TextView
+                            android:id="@+id/open_layout_right_page3_action_detail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:paddingLeft="15sp"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:text="活动描述"
+                            android:textColor="@color/font_grey"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/line_gradient_h" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="已选活动"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item10"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item9"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="活动类型"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item11"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item10"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="担保类型"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item12"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item11"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="操作"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item13"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_actin_result_name"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="存费送费二年期"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item14"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item13"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_actin_result_type"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="自备机存费送费"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item15"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item14"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_actin_result_cond"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="无担保"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/open_layout_right_page3_item16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@+id/open_layout_right_page3_item15"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="3dp" >
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/line_gradient_h" />
+
+                            <RelativeLayout
+                                android:layout_width="150dp"
+                                android:layout_height="fill_parent" >
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/line_gradient_v" />
+
+                                <TextView
+                                    android:id="@+id/open_layout_right_page3_actin_result_oper"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:text="删除"
+                                    android:textColor="@drawable/black"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 标签页03 footer -->
+
+    <LinearLayout
+        android:id="@+id/open_layout_right_page3_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/open_layout_right_page3_pre_step"
+                style="@style/usp_btn_common_left_style"
+                android:text="@string/button_prev" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/open_layout_right_page3_next_step"
+                style="@style/usp_btn_common_right_style"
+                android:text="@string/button_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

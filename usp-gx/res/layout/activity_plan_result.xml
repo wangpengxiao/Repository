@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/content_bg">
+
+	<include layout="@layout/app_head_1btn"/>
+   
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"> 	
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">     
+	<RelativeLayout style="@style/app_layout_top_style" >
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="编号"/>
+	    <EditText
+	        android:id="@+id/result_id"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空"/>    
+	</RelativeLayout>
+ 
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="活动名称" />
+	    <EditText
+	        android:id="@+id/result_name"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />
+	</RelativeLayout>	
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="活动地址" />
+	    <EditText
+	        android:id="@+id/result_address"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />   
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="城市类型" />
+	    <EditText
+	        android:id="@+id/result_city_type"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />    
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="场所名称" />
+	    <EditText
+	        android:id="@+id/result_city"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />    
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="城市名称" />
+	    <EditText
+	        android:id="@+id/result_city_name"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />    
+	</RelativeLayout>	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="区域代码" />
+	    <EditText
+	        android:id="@+id/result_field_seq"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />		    
+	</RelativeLayout>	
+	
+		<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="开始时间" />
+	    <EditText
+	        android:id="@+id/result_start_time"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />   
+	</RelativeLayout>	
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="结束时间" />
+	    <EditText
+	        android:id="@+id/result_end_time"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />   
+	</RelativeLayout>	
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="活动状态" />
+	    <EditText
+	        android:id="@+id/result_flag"
+	        style="@style/app_edittext_style"
+	        android:enabled="false"
+	        android:text="空" />   
+	</RelativeLayout>	
+	<RelativeLayout style="@style/app_layout_middle_style">
+	   <Button 
+	       android:id="@+id/result_handle"
+	       android:layout_marginTop="10dp"
+	       android:layout_marginLeft="80dp"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="处理"
+	       />
+	   <Button
+	       android:id="@+id/result_detail"
+	       android:layout_toRightOf="@id/result_handle"
+	       android:layout_alignTop="@id/result_handle"
+	       android:layout_marginLeft="20dp"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="详细"/>
+	</RelativeLayout>	
+	</LinearLayout>
+ </ScrollView>
+
+</LinearLayout>

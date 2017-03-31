@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0000000"
+    android:orientation="vertical"
+    android:windowIsTranslucent="true" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片名称:" />
+
+        <TextView
+            android:id="@+id/pic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textColor="#49B41E" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片描述:" />
+
+        <TextView
+            android:id="@+id/pic_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comments"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textColor="#49B41E" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片时间:" />
+
+        <TextView
+            android:id="@+id/pic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textColor="#49B41E" />
+    </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/staffid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="员 工 ID:" />
+
+        <TextView
+            android:id="@+id/pic_staffid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/staffid"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textColor="#49B41E" />
+    </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/positionx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经度:" />
+
+        <TextView
+            android:id="@+id/position_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/positionx"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textColor="#49B41E" />
+    </RelativeLayout>
+            <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <TextView
+            android:id="@+id/positiony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纬度:" />
+
+        <TextView
+            android:id="@+id/position_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/positiony"
+            android:paddingLeft="30dp"
+            android:text=""
+            android:textColor="#49B41E" />
+    </RelativeLayout>
+
+</LinearLayout>

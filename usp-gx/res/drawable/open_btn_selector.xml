@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/navigation_left_pressed_bg" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@color/navigation_left_pressed_bg" android:state_focused="false" android:state_pressed="true"/>
+    <item android:drawable="@color/navigation_left_pressed_bg" android:state_selected="true"/>
+    <item android:drawable="@color/navigation_left_pressed_bg" android:state_focused="true"/>
+    <item android:drawable="@color/navigation_left_bg"/>
+
+</selector>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/modify_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#FE7C00"
+            android:text="@string/cancel_text"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/modify_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#FE7C00"
+            android:text="@string/OK_text"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/image1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/image_fighter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fighter_title" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp" >
+
+                <!-- 名称 -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20pt"
+                        android:text="@string/fighter_name"
+                        android:textColor="#FE7C00" />
+
+                    <EditText
+                        android:id="@+id/fighter_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_weight="6" />
+                </TableRow>
+                <!-- 网格信息 -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20pt"
+                        android:text="@string/fighter_info"
+                        android:textColor="#FE7C00" />
+
+                    <EditText
+                        android:id="@+id/fighter_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_weight="6" />
+                </TableRow>
+                <!-- 运营商 -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20pt"
+                        android:text="@string/fighter_boss"
+                        android:textColor="#FE7C00" />
+
+                    <EditText
+                        android:id="@+id/fighter_boss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_weight="6" />
+                </TableRow>
+                <!-- 拍照 -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20pt"
+                        android:text="@string/fighter_pic"
+                        android:textColor="#FE7C00" />
+
+                    <EditText
+                        android:id="@+id/fighter_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="0.9mm"
+                        android:layout_marginTop="6pt"
+                        android:layout_weight="6" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2mm"
+                            android:background="@drawable/fighter_camera" />
+
+                        <ImageButton
+                            android:id="@+id/sdcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/camera"
+                            android:layout_marginTop="3mm"
+                            android:background="@drawable/fighter_sdcard" />
+                    </RelativeLayout>
+                </TableRow>
+                <!-- 图片描述 -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20pt"
+                        android:text="@string/fighter_pic_des"
+                        android:textColor="#FE7C00" />
+
+                    <EditText
+                        android:id="@+id/fighter_pic_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_weight="6" />
+                </TableRow>
+                <!-- 地址 -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20pt"
+                        android:text="@string/fighter_address"
+                        android:textColor="#FE7C00" />
+
+                    <EditText
+                        android:id="@+id/fighter_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6pt"
+                        android:layout_weight="6" />
+                </TableRow>
+                <!-- 描述 -->
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="20pt"
+                        android:text="@string/fighter_des"
+                        android:textColor="#FE7C00" />
+
+                    <EditText
+                        android:id="@+id/fighter_describe"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="6pt"
+                        android:layout_weight="6" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

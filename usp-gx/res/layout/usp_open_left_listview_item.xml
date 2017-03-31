@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/open_left_listView_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/open_select_left_listView_item"
+        style="@style/usp_left_drawer_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/button_number"
+            style="@style/usp_left_drawer_count"
+            android:background="@drawable/usp_left_number_normal_bg" />
+
+        <TextView
+            android:id="@+id/button_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:bufferType="spannable"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0" />
+
+</LinearLayout>

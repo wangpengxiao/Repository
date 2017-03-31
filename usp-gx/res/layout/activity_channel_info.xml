@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_head_1btn" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/app_layout_top_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="渠道名称" />
+
+                <TextView
+                    android:id="@+id/channel_name"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="渠道ID" />
+
+                <TextView
+                    android:id="@+id/channel_id"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="渠道类型" />
+
+                <TextView
+                    android:id="@+id/channel_kindname"
+                    style="@style/app_textview_right_style"
+                    android:gravity="right"
+                    android:text="空"
+                    android:textColor="#49B41E"
+                    android:width="152dp" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="市场类型" />
+
+                <TextView
+                    android:id="@+id/channel_marttype"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/app_layout_middle_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="地域类型" />
+
+                <TextView
+                    android:id="@+id/channel_areatype"
+                    style="@style/app_textview_right_style"
+                    android:text="空"
+                    android:textColor="#49B41E" />
+            </RelativeLayout>
+
+            <!-- 渠道图片 -->
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pic_select"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/list_item_middle_bg" >
+
+                <!-- android:background="@drawable/item_picselect_bg" -->
+
+                <RelativeLayout
+                    android:id="@+id/pic_layout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="渠道图片"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/pic_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        android:textColor="#49B41E"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/arrow_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pic_layout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="52dp"
+                    android:layout_below="@id/pic_layout01"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/item_expand_bg"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pic_select1"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/list_item_middle_bg">
+
+                <RelativeLayout
+                    android:id="@+id/pic_layout03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="活动图片"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/activity_pic_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        android:textColor="#49B41E"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/arrow_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pic_layout04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="52dp"
+                    android:layout_below="@id/pic_layout03"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/item_expand_bg"
+                    android:visibility="invisible" >
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- 渠道业务量、佣金账期列表 -->
+
+            <RelativeLayout style="@style/app_layout_bottom_style" >
+
+                <TextView
+                    style="@style/app_textview_left_style"
+                    android:text="账期查询" />
+
+                <ImageButton
+                    android:id="@+id/periodlistviewselect"
+                    style="@style/app_textview_right_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_btn_search_selected" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

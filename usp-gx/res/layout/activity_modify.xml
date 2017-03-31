@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+    >
+  
+       
+       <TableLayout    android:id="@+id/TableLayout02"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip"
+    android:shrinkColumns="0"
+    android:stretchColumns="0">
+     
+         <TableRow
+      android:paddingTop="0dip"
+      android:background="#FDA63C" >
+     <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/cancel_text"
+            android:paddingLeft="50dp"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#FFFFFF"
+            android:background="#FDA63C"
+         />
+
+     <Button
+          android:background="#FDA63C"
+          android:paddingRight="50dp"
+          android:layout_gravity="right"
+          android:textColor="#FFFFFF"
+          android:textSize="18sp"
+          android:paddingTop="8dp"
+          android:paddingBottom="8dp"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="@string/OK_text"
+    />
+     </TableRow>
+     
+     </TableLayout>
+     
+           <ScrollView
+        android:id="@+id/settingScroll2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+     >   
+<TableLayout
+    android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="10dip"
+    android:shrinkColumns="1"
+    android:stretchColumns="1" >
+ 
+    <TextView
+        android:id="@+id/setting_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" 
+        android:gravity="center"
+        android:text="@string/info_setting"
+        android:textColor="#DC6F06"
+         />
+
+    <TableRow android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/settingUserName"
+              android:textColor="#D46B02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_user_name" />
+
+        <EditText
+            android:id="@+id/editUserName"
+            android:hint="@string/edit_user_name"
+            android:padding="10dip"
+            android:textSize="10sp" />
+    </TableRow>
+
+    <TableRow android:paddingTop="15dip" >
+
+        <TextView
+              android:textColor="#D46B02"
+            android:id="@+id/settingUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_user" />
+
+        <EditText
+            android:id="@+id/editUser"
+            android:hint="@string/edit_user"
+            android:padding="10dip"
+            android:textSize="10sp" />
+    </TableRow>
+
+    <TableRow android:paddingTop="15dip" >
+
+        <TextView
+              android:textColor="#D46B02"
+            android:id="@+id/settingTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_tel" />
+
+        <EditText
+            android:id="@+id/editTel"
+            android:hint="@string/edit_tel"
+            android:padding="10dip"
+            android:textSize="10sp" />
+    </TableRow>
+
+    <TableRow android:paddingTop="15dip" >
+
+        <TextView
+              android:textColor="#D46B02"
+            android:id="@+id/settingEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_email" />
+
+        <EditText
+          android:id="@+id/editEma"
+            android:hint="@string/edit_email"
+            android:padding="10dip"
+            android:textSize="10sp" />
+    </TableRow>
+
+    <TableRow android:paddingTop="15dip" >
+
+        <TextView
+              android:textColor="#D46B02"
+            android:id="@+id/settingAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_address" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:hint="@string/edit_address"
+            android:padding="10dip"
+            android:textSize="10sp" />
+    </TableRow>
+
+    <TableRow android:paddingTop="15dip" >
+
+        <TextView
+              android:textColor="#D46B02"
+            android:id="@+id/settingUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_update" />
+
+        <EditText
+            android:id="@+id/editUpdate"
+            android:padding="10dip"
+            android:textSize="10sp" />
+    </TableRow>
+
+    <TableRow android:paddingTop="15dip" >
+
+        <TextView
+              android:textColor="#D46B02"
+            android:id="@+id/settingAutoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_auto_login" />
+       <EditText
+            android:id="@+id/editAutoLogin"
+            android:padding="10dip"
+            android:textSize="10sp" />
+    </TableRow>
+</TableLayout>
+</ScrollView>
+</LinearLayout>

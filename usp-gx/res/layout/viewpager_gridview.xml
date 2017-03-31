@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 			<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:verticalSpacing="1dp"
+				android:horizontalSpacing="1dp" 
+				android:numColumns="4"
+				android:layout_marginTop="25dp"
+				android:layout_marginBottom="25dp"
+				android:stretchMode="columnWidth"
+				android:listSelector="@android:color/transparent">
+			</GridView>  

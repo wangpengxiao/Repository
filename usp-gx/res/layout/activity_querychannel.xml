@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_head_1btn" />
+
+    <include layout="@layout/search_box" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/content_bg" >
+
+        <ListView
+            android:id="@+id/channellistView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/tab_list_diver"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="false"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

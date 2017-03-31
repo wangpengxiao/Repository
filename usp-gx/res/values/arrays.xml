@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="operator">
+        <item>移动</item>
+        <item>电信</item>
+        <item>其他</item>
+        <item>铁通</item>
+        <item>多方合作</item>
+        <item>中性</item>
+    </string-array>
+    <string-array name="operator_num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="detailed_list">
+        <item>证件类型</item>
+        <item>证件号码</item>
+        <item>证件到期时间</item>
+        <item>证件地址</item>
+        <item>客户名称</item>
+        <item>客户邮编</item>
+        <item>联系人姓名</item>
+        <item>联系人电话</item>
+        <item>联系人地址</item>
+        <item>发展人编码</item>
+        <item>发展渠道编码</item>
+        <item>初始信用度</item>
+        <item>电信类型</item>
+        <item>设备号码</item>
+        <item>号预存</item>
+        <item>套餐ID</item>
+    </string-array>
+
+    <declare-styleable name="gallery_sty">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+
+</resources>

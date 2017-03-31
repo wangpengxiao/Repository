@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  	android:background="@drawable/content_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_head_1btn" />
+	<include layout="@layout/search_box" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/content_bg"
+        android:layout_marginLeft="0dp" >
+		
+        <ListView android:id="@+id/planlistView"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:layout_alignParentTop="true"
+			 android:divider="@drawable/tab_list_diver" 
+			 android:dividerHeight="1px"		
+			 android:headerDividersEnabled="false"   
+			 android:footerDividersEnabled="false"   
+			 android:cacheColorHint="#00000000"
+			 android:fastScrollEnabled="true"
+			 android:drawSelectorOnTop="false">
+		</ListView>    
+		
+    </RelativeLayout>
+ 	
+</LinearLayout>

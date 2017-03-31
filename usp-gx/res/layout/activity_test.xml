@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tab_content_bg">
+
+	<include layout="@layout/app_head_1btn"/>
+	
+	<include layout="@layout/search_box"/>
+	
+ <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"> 	
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">     
+     
+	<RelativeLayout style="@style/app_layout_top_style" >
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="用户名"/>
+	    <EditText
+	        style="@style/app_edittext_style"
+	        android:singleLine="true"   
+	        android:text="1111111111"/>
+	</RelativeLayout>
+ 
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="姓名" />
+	    <EditText
+	        style="@style/app_edittext_style"
+	        android:singleLine="true"
+	        android:text="bbbbbbb"/>
+	</RelativeLayout>	
+
+	<RelativeLayout style="@style/app_layout_middle_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="单位" />
+	    <EditText
+	        style="@style/app_edittext_style"   	        
+	        android:text="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"/>
+	</RelativeLayout>	
+
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/pic_select"
+	    android:layout_width="wrap_content"
+	    android:layout_height="37dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/item_picselect_bg">
+	    
+		<RelativeLayout 
+	    	android:id="@+id/pic_layout01"
+        	android:layout_width="fill_parent"
+        	android:layout_height="37dp">
+	    	<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:textSize="14dp"
+	      	  	android:text="图片" />
+	   		 <TextView
+	   		   	android:id="@+id/pic_number"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="15dp"
+				android:textSize="14dp"
+	   		   	android:text="1" />	    
+			<ImageView 
+				android:layout_width="8dp"
+				android:layout_height="13dp"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/arrow_more"/>    
+		</RelativeLayout>	
+		  
+		<RelativeLayout
+		    	android:id="@+id/pic_layout02"
+		   		android:layout_width="fill_parent"
+		    	android:layout_height="52dp"
+		    	android:layout_below="@id/pic_layout01"
+		    	android:layout_marginTop="-5dp"
+				android:visibility="invisible"
+		    	android:background="@drawable/item_expand_bg">
+				    
+		    
+	    </RelativeLayout>
+	    	    
+	</RelativeLayout>	
+				
+	<RelativeLayout style="@style/app_layout_bottom_style">
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="移动电话" />
+	    <EditText
+	        style="@style/app_edittext_style"
+	        android:singleLine="true"
+	        android:phoneNumber="true"
+	        android:text="2234242"/>
+	</RelativeLayout>	
+	
+	
+
+
+	</LinearLayout>
+ </ScrollView>
+</LinearLayout>

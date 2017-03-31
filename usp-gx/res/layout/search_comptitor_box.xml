@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_box"
+    android:layout_width="fill_parent"
+    android:layout_height="178dp"
+    android:orientation="vertical"
+    android:background="@drawable/dragdown_bg"
+    android:visibility="gone"
+    >
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">     
+     
+	<RelativeLayout 
+	    style="@style/app_layout_style"
+	    android:layout_marginTop="5dp" >
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="竞争者名称"/>
+	    <EditText
+	        style="@style/app_edittext_style"
+	        android:id="@+id/search_key_name"
+	        android:hint="请输入"/>
+	</RelativeLayout>
+	<RelativeLayout 
+	    style="@style/app_layout_style"
+	    android:layout_marginTop="5dp" >
+	     	<TextView
+	        style="@style/app_textview_left_style"
+	        android:text="地址"/>
+	    	<EditText
+	        style="@style/app_edittext_style"
+	        android:id="@+id/search_key_address"
+	        android:hint="请输入"/>
+	</RelativeLayout>
+	<RelativeLayout 
+	 	   	 style="@style/app_layout_style"
+	 	   	 android:layout_marginTop="5dp" 
+	 	   >
+	     <TextView   
+	        style="@style/app_textview_left_style"
+	        android:text="运营商"/>
+	       <Spinner  
+            android:id="@+id/search_key_spinner"
+   			android:entries="@array/operator"   
+    		android:prompt="@string/prompt"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentRight = "true"		
+    		android:layout_centerVertical = "true"
+			android:gravity = "right"
+			android:layout_marginRight = "15dp"
+			android:width = "150dp"
+			android:background="@null" 
+                      />  
+	</RelativeLayout>
+	<RelativeLayout 
+	    style="@style/app_layout_middle_style"
+	    android:layout_marginTop="10dp"
+	    android:background="@android:color/transparent">
+	    
+   <Button
+        android:id="@+id/button_search_confirm"
+        android:layout_width="76dp"
+        android:layout_height="33dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_search_selector"
+		android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1" 
+        android:text="搜索"               
+        android:textColor="@color/white"
+        android:textSize="13dp"/>		    
+	    
+	</RelativeLayout>		
+	
+	</LinearLayout>
+</LinearLayout>

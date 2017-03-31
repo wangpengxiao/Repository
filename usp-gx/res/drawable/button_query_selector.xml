@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 
+    <item android:state_selected="true"><shape>
+            <solid android:color="#9fa09f" />
+        </shape></item>
+    <item android:state_pressed="true"><shape>
+            <solid android:color="#9fa09f" />
+        </shape></item>
+    <item><shape>
+            <solid android:color="#ececec" />
+        </shape></item> -->
+        
+    <item android:state_selected="true" android:drawable="@drawable/usp_btn_pressed"/>
+        
+    <item android:state_pressed="true" android:drawable="@drawable/usp_btn_pressed"/>
+    
+    <!-- 默认时的背景图片-->
+    <item android:drawable="@drawable/usp_btn_normal" />
+    
+        
+</selector>

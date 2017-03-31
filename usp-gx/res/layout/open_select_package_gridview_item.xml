@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/open_select_package_gridView_item"
+    android:layout_width="fill_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/item_selected_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/grid_item_style"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/open_select_package_gridView_ofr_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:text="13333333333"
+            android:textColor="@color/black"
+            android:textSize="12sp" 
+            android:paddingTop="10dp"
+            android:visibility="gone">
+        </TextView>
+
+        <TextView
+            android:id="@+id/open_select_package_gridView_ofr_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/open_select_package_gridView_ofr_id"
+            android:gravity="center_horizontal"
+            android:text="预存300元 月基本费300元"
+            android:textColor="@color/black"
+            android:lines="2"           
+            android:ellipsize="end"
+            android:textSize="20sp">
+        </TextView>
+        
+        <TextView
+            android:id="@+id/open_select_package_gridView_ofr_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/open_select_package_gridView_ofr_name"
+            android:gravity="center_horizontal"
+            android:text="预存300元 月基本费300元"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone">
+        </TextView>
+        
+        <TextView
+            android:id="@+id/open_select_package_gridView_market_price"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/open_select_package_gridView_ofr_desc"
+            android:gravity="center_horizontal"
+            android:text="预存300元 月基本费300元"
+            android:textColor="@color/black"
+            android:textSize="14sp" 
+            android:layout_marginTop="5dp">
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

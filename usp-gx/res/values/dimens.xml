@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pic_select_height_s">86dp</dimen>
+    <dimen name="pic_select_height_h">37dp</dimen>
+    <dimen name="shadow_width">15.0dip</dimen>
+    <dimen name="slidingmenu_offset">50.0dip</dimen>
+</resources>

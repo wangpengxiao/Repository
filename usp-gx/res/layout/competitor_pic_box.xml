@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_box"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@drawable/dragdown_bg"
+    android:visibility="gone"
+    >
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">     
+     
+	<RelativeLayout 
+	    style="@style/app_layout_style"
+	    android:layout_marginTop="5dp" >
+	    <TextView
+	        style="@style/app_textview_left_style"
+	        android:text="图片名称"/>
+	    <TextView
+	        style="@style/app_edittext_style"
+	        android:id="@+id/search_key_pic_name"
+	     />
+	</RelativeLayout>
+	<RelativeLayout 
+	    style="@style/app_layout_style"
+	    android:layout_marginTop="5dp" >
+	     	<TextView
+	        style="@style/app_textview_left_style"
+	        android:text="图片上传时间"/>
+	    	<TextView
+	        style="@style/app_edittext_style"
+	        android:id="@+id/search_key_pic_update_time"
+	       	/>
+	</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

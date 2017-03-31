@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/FrameLayout01"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:background="@color/white" >
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/LinearLayoutGrid" android:layout_width="fill_parent"
+			android:background="@drawable/content_bg"
+			android:layout_height="fill_parent">
+
+ 			<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/tab1_gridView" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:verticalSpacing="10dp"
+				android:horizontalSpacing="10dp" 
+				android:numColumns="auto_fit"
+				android:columnWidth="80dp" 
+				android:padding="10px"
+				android:stretchMode="columnWidth">
+			</GridView>   
+		</LinearLayout>		
+	    	    
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/LinearLayoutList" android:layout_width="fill_parent"
+			android:background="@drawable/content_bg"
+			android:layout_height="fill_parent">
+
+    
+				<ListView android:id="@+id/tab1_listView" 
+	   				 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 android:divider="@drawable/tab_list_diver" 
+					 android:dividerHeight="1px"		
+					 android:headerDividersEnabled="false"   
+					 android:footerDividersEnabled="false"   
+					 android:cacheColorHint="#00000000"
+					 android:fastScrollEnabled="true"
+					 android:drawSelectorOnTop="false">
+				</ListView>    
+ 
+		</LinearLayout>	  
+		
+	
+		
+
+	</ViewFlipper>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  <!-- //头部 -->
+	<include layout="@layout/main_head"/>
+	<!-- //中部 -->
+	<RelativeLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	>
+		<TextView
+		android:id="@+id/shake_tv"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/shake"
+		android:layout_centerVertical="true"
+		/>
+		<TextView
+		android:id="@+id/address_tv"
+		android:gravity="center_horizontal"
+		android:layout_alignLeft="@id/shake_tv"
+		android:layout_alignRight="@id/shake_tv"
+		android:layout_alignBottom="@id/shake_tv"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="2dp"
+		/>
+	</RelativeLayout>
+</RelativeLayout>

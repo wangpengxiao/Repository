@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ApiDemos!</string>
+    <string name="app_name">统一销售USS</string>
+    <string name="copy_right">Copyright © 2014 China Unicom All Rights Reserved</string>
+
+    <!-- 登录 -->
+    <string name="settings_label">设置登录地址</string>
+    <string name="rememberpwd_text">记住密码</string>
+    <string name="settings_shortcut">s</string>
+    <string name="login">用户登录</string>
+    <string name="user_code_text">帐  号:</string>
+    <string name="username_hint">请输入</string>
+    <string name="password_text">密  码:</string>
+    <string name="password_hint">请输入</string>
+    <string name="remember_pwd_text">记住密码</string>
+    <string name="identifying_code">验证码:</string>
+    <string name="another_code">换一张!</string>
+    <string name="login_organ_text">登录机构:</string>
+    <string name="organ_hint">登录机构</string>
+    <string name="login_text">登 录</string>
+    <string name="setting_text">设置</string>
+    <string name="producer_text">河南联通公司 </string>
+    <string name="producertwo_text">天源迪科软件</string>
+    <string name="produce_text">联合开发   </string>
+    <string name="inconsistent_SIM">SIM卡与所绑定的不一致</string>
+    <string name="bing_SIM_failed">绑定SIM卡失败</string>
+    <string name="version_text">v1.1.9</string>
+    <string name="usercode_or_password_empty_warning">用户ID和用户密码不能为空</string>
+    <string name="usercode_is_not_numeric_warning">用户ID只能为数字</string>
+    <string name="dealer_warning">经营户不允许登录！</string>
+    <string name="login_connection_error">网络连接失败！是否重新设置登录地址？</string>
+    <string name="login_failed">用户名或密码错误！</string>
+    <string name="username_or_password_wrong">用户名或密码错误！</string>
+    <string name="outline_login">是否要离线登录，如果选择离线登录，部分功能将不可用！</string>
+
+    <!-- 信息修改 kangbofei@tydic.com -->
+
+    <string name="menu_settings">Settings</string>
+    <string name="info_setting">信息修改</string>
+    <string name="setting_user_name">用户名</string>
+    <string name="edit_user_name">请输入用户名</string>
+    <string name="setting_user">姓名</string>
+    <string name="edit_user">请输入姓名</string>
+    <string name="setting_tel">移动电话</string>
+    <string name="edit_tel">请输入移动电话号码</string>
+    <string name="setting_email">电子邮箱</string>
+    <string name="edit_email">请输入电子邮箱账号</string>
+    <string name="setting_address">地址</string>
+    <string name="edit_address">请输入地址</string>
+    <string name="setting_update">更新imsi</string>
+    <string name="setting_auto_login">自动登录</string>
+    <!-- 竞争录入 kangbofei@tydic.com -->
+    <string name="title_com">竞争者录入</string>
+    <string name="comp_name">名        称</string>
+    <string name="net_info">网络信息</string>
+    <string name="operators">运  营  商</string>
+    <string name="photo">拍       照</string>
+    <string name="introduce">图片描述</string>
+    <string name="address">地       址</string>
+    <string name="description">描       述</string>
+    <!-- 个人功能界面kangbofei@tydic.com -->
+    <string name="personal_character_title">个性的大标题</string>
+    <string name="personal_description">关于他的详细介绍如下</string>
+    <string name="personal_job_number">工号</string>
+    <!-- 竞争者查询功能界面 kangbofei@tydic.com -->
+    <string name="prompt">运营商类型</string>
+    <string name="competitor_name">竞争者名称</string>
+    <string name="competitor_id">竞争者ID</string>
+    <!-- 登录yangqiong@tydic.com -->
+    <string name="login_title">易运营登录</string>
+    <string name="login_user">用户名</string>
+    <string name="login_pass">密    码</string>
+    <string name="login_reset">重置</string>
+    <!-- 修改密码 yangqiong@tydic.com -->
+    <string name="modify_pwd">修改密码</string>
+    <string name="old_pass">旧    密    码</string>
+    <string name="new_pass">新    密    码</string>
+    <string name="repeat_pass">确 认 密 码</string>
+    <!-- 竞争者录入yangqiong@tydic.com -->
+    <string name="fighter_name">名        称</string>
+    <string name="fighter_info">网格信息</string>
+    <string name="fighter_boss">运  营  商</string>
+    <string name="fighter_pic">拍        照</string>
+    <string name="fighter_pic_des">图片描述</string>
+    <string name="fighter_address">地        址</string>
+    <string name="fighter_des">描        述</string>
+    <!-- 提示信息 -->
+    <string name="button_prev">上一步</string>
+    <string name="button_next">下一步</string>
+    <string name="button_complete">配置完成</string>
+    <string name="message_title">提示</string>
+    <string name="error_title">错误</string>
+    <string name="OK_text">确定</string>
+    <string name="cancel_text">取消</string>
+    <string name="yes_text">是</string>
+    <string name="no_text">否</string>
+    <string name="attention_title">注意</string>
+    <string name="exit_prompt">你确定要退出？</string>
+    <string name="upload_prompt">你确定要上传吗？</string>
+
+    <!-- 无网络连接时对话框的 标题 -->
+    <string name="dialog_noNetTitle">无可用的网络连接</string>
+    <!-- 无网络连接时对话框的 消息内容 -->
+    <string name="dialog_noNetMsg">您好,您目前没有可用的网络连接！</string>
+    <!-- 设置网络按钮 -->
+    <string name="dialog_setNet">设置网络</string>
+    <string name="dialog_exit">退出</string>
+
+    <!-- 升级标题 -->
+    <string name="update_title">软件升级</string>
+    <string name="update_message">发现新版本,建议立即更新使用.</string>
+    <string name="update_positive_button">升级</string>
+    <string name="update_negative_button">取消</string>
+
+    <!-- 异步下载图片状态 -->
+    <item name="tag_asynimage_stat" type="id"></item>
+
+    <!-- 头部工具栏 -->
+    <string name="bar_slider">导航</string>
+    <string name="bar_settings">设置</string>
+    <string name="bar_messages">消息</string>
+    <string name="bar_home">主页</string>
+
+    <!-- 开户清单信息 -->
+    <string name="id_type">证件类型</string>
+    <string name="id_number">证件号码</string>
+    <string name="auth_end_date">证件到期时间</string>
+    <string name="auth_adress">证件地址</string>
+    <string name="customer_name">客户名称</string>
+    <string name="cust_post">客户邮编</string>
+    <string name="contact_name">联系人姓名</string>
+    <string name="contact_phone">联系人电话</string>
+    <string name="contact_adress">联系人地址</string>
+    <string name="devolop_post">发展人编码</string>
+    <string name="devolop_channel_id">发展渠道编码</string>
+    <string name="credit_first">初始信用度</string>
+    <string name="tele_type">电信类型</string>
+    <string name="acc_nbr">设备号码</string>
+    <string name="acc_nbr_fee">号预存</string>
+    <string name="ofr_id">套餐ID</string>
+
+    <!-- 左侧导航栏 -->
+    <string name="navigation_welcome">您好！</string>
+    <string name="navigation_opername">名称：</string>
+    <string name="navigation_operdept">部门：</string>
+    <string name="navigation_quick">快速导航</string>
+    <string name="navigation_logout">退出</string>
+    <string name="navigation_item_text_signin">营销签到</string>
+    <string name="navigation_item_text_scan">扫一扫</string>
+    <string name="navigation_item_text_photo">拍照上传</string>
+    <string name="navigation_item_text_changepwd">修改密码</string>
+
+</resources>
